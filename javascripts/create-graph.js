@@ -10,7 +10,7 @@
 //parse data from the csv file using PapaParse and create graphs needed.
 function parseData(createGraph){
    // Papa.parse("https://edwinomeara.github.io/LABikeShareData/dataAndImages/metrobikesharetripdata.csv", {
-    Papa.parse("../.git/lfs/objects/33/0e/330ef1f24fd422493cc438ecf1dae6c20b7cfed904a1854e0128cf77574b1ab5",{
+    Papa.parse("/.git/lfs/objects/33/0e/330ef1f24fd422493cc438ecf1dae6c20b7cfed904a1854e0128cf77574b1ab5",{
 
       download: true,
       complete: function(results) {
