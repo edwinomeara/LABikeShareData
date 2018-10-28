@@ -13,8 +13,8 @@ function parseData(createGraph){
    //Papa.parse("/dataAndImages/metrobikesharetripdata.csv", {
       download: true,
       complete: function(results) {
-	// setTimeout(function(){createGraph(results.data) ; }, 5000);
-        createGraph(results.data);    //Line Chart
+	 setTimeout(function(){createGraph(results.data) ; }, 5000);
+        //createGraph(results.data);    //Line Chart
         createPieRiders(results.data);//Pie Chart
         createBarChart(results.data); //First Bar Chart
         createBarChart2(results.data);//Second Bar Chart
@@ -489,5 +489,5 @@ function createGraph(data) {
 }
 
 //start creating graphs
-setTimeout(function(){ parseData(createGraph); }, 5000);
-//parseData(createGraph);
+//setTimeout(function(){ parseData(createGraph); }, 5000);
+parseData(createGraph);
