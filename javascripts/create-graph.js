@@ -14,7 +14,8 @@ function parseData(createGraph){
 
       download: true,
       complete: function(results) {
-        createGraph(results.data);    //Line Chart
+	 setTimeout(function(){createGraph(results.data) ; }, 5000);
+       // createGraph(results.data);    //Line Chart
         createPieRiders(results.data);//Pie Chart
         createBarChart(results.data); //First Bar Chart
         createBarChart2(results.data);//Second Bar Chart
