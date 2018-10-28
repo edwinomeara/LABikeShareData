@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>L.A. Bike Share Data</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='stylesheets/style.css' />
+
+    <!-- load c3.css -->
+    <link href="stylesheets/c3.css" rel="stylesheet" type="text/css">
+
+    <!-- load d2.js and c3.js for graphs-->
+    <script src="javascripts/d3.v3.min.js" charset="utf-8"></script>
+    <script src="javascripts/c3.min.js"></script>
+
+    <!-- load papaparse.js for parsing the CSV file-->
+    <script src="javascripts/papaparse.min.js"></script>
+  </head>
+  <body>
+
+    <!-- L.A. Bike Share Data website logo -->
+    <div class="logo"></div>
+
+    <!-- Header/Description for the Pie Chart(regular/nonregular riders) -->
+    <section class="section section-dark">
+      <h2>Pie chart based on the passes each riders used.</h2>
+      <p>The passes included in the data were the Monthly Pass, Flex Pass, and Walk-Up Pass.  Riders that
+        used bike sharing as a regular part of their commute were those who
+        had the Monthly Pass or the Flex Pass.</p>
+    </section>
+
+    <!--PIE CHART -->
+      <div id="pieChart"></div>
+
+      <!--first image of the bikes together-->
+    <div class="pimg">
+      <div class="ptext">
+        <span class="border">
+        </span>
+      </div>
+    </div>
+
+    <!--Header/Description for the Line Chart(time spent on bike) -->
+    <section class="section section-dark">
+      <h2>Line Chart of the average amount of time each rider spent on a bike.</h2>
+      <p> By dividing the given data into five minute intervals we can see that
+        average time spent on a bike was 6-10 minutes.
+      </p>
+    </section>
+
+    <!--Line chart -->
+    <div id="chart"></div>
+
+    <!--second image of blue bike-->
+    <div class="pimg2">
+      <div class="ptext">
+        <span class="border">
+        </span>
+      </div>
+    </div>
+
+    <!--Header/Description for first Bar Chart(distances travelled)-->
+    <section class="section section-dark">
+      <h2>Bar chart of the average distances travelled.</h2>
+      <p> Using the given longitudes and lattitudes points with the Haversine formula
+        we can see the distances each rider travelled.
+      </p>
+    </section>
+
+    <!--First Bar Chart-->
+    <div id="barChart"></div>
+
+    <!--third image of bike road sign-->
+    <div class="pimg3">
+      <div class="ptext">
+        <span class="border">
+        </span>
+      </div>
+    </div>
+
+    <!--Header/Description for second Bar Chart(start/stop locations)-->
+    <section class="section section-dark">
+      <h2>Bar chart of the start and stop locations each rider used.</h2>
+      <p>Based on where each rider started or ended their journey we can find
+        the most and least popular locations.
+      </p>
+    </section>
+
+    <!--Second Bar Chart-->
+    <div id="barChart2"></div>
+
+    <!--fourth image of bike and sunset-->
+    <div class="pimg4">
+      <div class="ptext">
+        <span class="border">
+        </span>
+      </div>
+    </div>
+
+    <!--last section message-->
+    <section class="section section-dark">
+      <h2>Thank You Very Much</h2>
+      <p>
+      </p>
+    </section>
+
+    <!--Create Graphs-->
+    <script src="javascripts/create-graph.js"></script>
+  </body>
+</html>
