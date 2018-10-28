@@ -489,4 +489,5 @@ function createGraph(data) {
 }
 
 //start creating graphs
-parseData(createGraph);
+setTimeout(function(){ parseData(createGraph); }, 3000);
+//parseData(createGraph);
