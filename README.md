@@ -8,7 +8,7 @@ Capital One Summit project using a large CSV file to create a web app with visua
 3. What is the average distance traveled?
 4. How many riders include bike sharing as a regular part of their commute?
 
-## Tools and API's used:
+## Tools and APIs used:
 * [Papa Parse](https://www.papaparse.com/)
 * [C3.js](https://c3js.org/)
 * [Git Large File Storage](https://git-lfs.github.com/)
