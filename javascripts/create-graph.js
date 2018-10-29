@@ -9,8 +9,8 @@
 
 //parse data from the csv file using PapaParse and create graphs needed.
 function parseData(createGraph){
-    Papa.parse("https://edwinomeara.github.io/LABikeShareData/dataAndImages/metrobikesharetripdata.csv", {
-   //Papa.parse("/dataAndImages/metrobikesharetripdata.csv", {
+   // Papa.parse("https://edwinomeara.github.io/LABikeShareData/dataAndImages/metrobikesharetripdata.csv", {
+   Papa.parse("/dataAndImages/metrobikesharetripdata.csv", {
       download: true,
       complete: function(results) {
 	 setTimeout(function(){createGraph(results.data) ; }, 5000);
