@@ -9,12 +9,9 @@
 
 //parse data from the csv file using PapaParse and create graphs needed.
 function parseData(createGraph){
-   // Papa.parse("https://edwinomeara.github.io/LABikeShareData/dataAndImages/metrobikesharetripdata.csv", {
 	Papa.parse("https://media.githubusercontent.com/media/edwinomeara/LABikeShareData/master/dataAndImages/metrobikesharetripdata.csv", {
-   //Papa.parse("/dataAndImages/metrobikesharetripdata.csv", {
       download: true,
       complete: function(results) {
-	 //setTimeout(function(){createGraph(results.data) ; }, 5000);
         createGraph(results.data);    //Line Chart
         createPieRiders(results.data);//Pie Chart
         createBarChart(results.data); //First Bar Chart
@@ -490,5 +487,4 @@ function createGraph(data) {
 }
 
 //start creating graphs
-//setTimeout(function(){ parseData(createGraph); }, 5000);
 parseData(createGraph);
